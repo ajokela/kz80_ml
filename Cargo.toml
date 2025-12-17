@@ -1,0 +1,20 @@
+[package]
+name = "kz80_ml"
+version = "0.1.1"
+edition = "2021"
+authors = ["Alex Jokela"]
+description = "Tiny ML compiler for the Z80 processor with Hindley-Milner type inference"
+license = "BSD-3-Clause"
+repository = "https://github.com/ajokela/kz80_ml"
+keywords = ["z80", "compiler", "ml", "retrocomputing", "type-inference"]
+categories = ["compilers", "embedded"]
+
+[lib]
+name = "kz80_ml"
+path = "src/lib.rs"
+
+[[bin]]
+name = "kz80_ml"
+path = "src/main.rs"
+
+[dependencies]

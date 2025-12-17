@@ -1,0 +1,8 @@
+(* Test: Nested if-then-else *)
+(* Expected: 1 *)
+(* sign function: if x < 0 then -1 else if x == 0 then 0 else 1 *)
+(* sign(5) = 1 *)
+
+let sign x = if x < 0 then 0 - 1 else if x == 0 then 0 else 1
+
+let main = print_int (sign 5)
